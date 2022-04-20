@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { ApplicationView } from "./components/ApplicationViews"
+import { NavBar } from "./components/nav/NavBar"
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(sessionStorage.getItem("encounter_user") !== null)
+
+    const setAuthUser = (user) => {
+        sessionStorage.setItem("encounter_user", JSON.stringify(user))
+        setIsAuthenticated(sessionStorage.getItem("encounter_user") !== null)
+    }
+
+    const clearUser = () => {
+        sessionStorage.clear();
+        setIsAuthenticated(sessionStorage.getItem("encounter_user") !== null)
+      }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated}/>
+    <ApplicationView setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated}/>
+    </>
   );
 }
 
