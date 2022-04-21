@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
+import { Home } from "./home/home"
 
 export const ApplicationView=({ isAuthenticated, setIsAuthenticated })=>{
 
@@ -18,7 +19,9 @@ export const ApplicationView=({ isAuthenticated, setIsAuthenticated })=>{
         <>
             <Routes>
                 <Route exact path="/login" element={<Login setAuthUser={setAuthUser} />} />
-                <Route exact path="/register" element={<Register />} />  
+                <Route exact path="/register" element={<Register setAuthUser={setAuthUser} />} /> 
+
+                <Route exact path="/" element={<PrivateRoute><Home /></PrivateRoute>} /> 
             </Routes>
         </>
         
