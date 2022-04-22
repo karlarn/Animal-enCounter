@@ -1,7 +1,20 @@
 {
-  "users": {
-    "email": "email@email.com",
-    "name": "Karl Nich"
-  },
-  "animals": {}
+  "users": [
+    {
+      "email": "aol@aol.com",
+      "name": "Karl Nich",
+      "id": 1
+    },
+    {
+      "email": "email@email.com",
+      "name": "greg gregerson",
+      "id": 2
+    },
+    {
+      "email": "netscape@netscape.com",
+      "name": "pete peterson",
+      "id": 3
+    }
+  ],
+  "animals": []
 }
