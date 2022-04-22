@@ -1,5 +1,7 @@
 export const Home= ()=>{
     return (
-        <image href="../public/images/"/>
+        <>
+        <h1>Just make it say something</h1>
+        </>
     )
 }
