@@ -1,27 +1,30 @@
 import { Routes, Route, Navigate, Outlet } from "react-router-dom"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
-import { Home } from "./home/home"
+import { Home } from "./home/Home"
 
-export const ApplicationView = ({ isAuthenticated, setIsAuthenticated }) => {
-    const PrivateOutlet = () => {
-      return isAuthenticated ? <Outlet /> : <Navigate to="/login" />
-    }
-  
-    const setAuthUser = (user) => {
-      sessionStorage.setItem("enounter_user", JSON.stringify(user))
-      setIsAuthenticated(sessionStorage.getItem("encounter_user") !== null)
-    }
+export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
+  const PrivateOutlet = () => {
+    return isAuthenticated ? <Outlet /> : <Navigate to="/login" />
+  }
 
-    return (
-        <>
-            <Routes>
-                <Route exact path="/login" element={<Login setAuthUser={setAuthUser} />} />
-                <Route exact path="/register" element={<Register setAuthUser={setAuthUser} />} /> 
+ 
 
-                <Route exact path="/" element={<PrivateOutlet><Home /></PrivateOutlet>} /> 
-            </Routes>
-        </>
-        
-    )
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<PrivateOutlet />}>
+          <Route  path="home" element={<Home />} />
+        </Route>
+
+
+
+        <Route  path="/login" element={<Login setAuthUser={setAuthUser} />} />
+        <Route  path="/register" element={<Register setAuthUser={setAuthUser} />} />
+
+
+      </Routes>
+    </>
+
+  )
 }
