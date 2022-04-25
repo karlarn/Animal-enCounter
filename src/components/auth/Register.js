@@ -43,13 +43,10 @@ export const Register = () => {
 					}),
 				})
 					.then((res) => res.json())
-					.then((createdUser) => {
-						if (createdUser.hasOwnProperty("id")) {
-							// The user id is saved under the key nutshell_user in session Storage. Change below if needed!
-							sessionStorage.setItem("encounter_user", JSON.stringify(createdUser));
-							navigate("/home");
+					.then(()=>{
+							navigate("/login");
 						}
-					});
+					);
 			} else {
 				setConflictDialog(true);
 			}
@@ -113,7 +110,7 @@ export const Register = () => {
 					/>
 				</fieldset>
 				<fieldset>
-					<button type="submit"> Sign in </button>
+					<button type="submit"> Register </button>
 				</fieldset>
 			</form>
 		</main>
