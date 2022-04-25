@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate, Outlet } from "react-router-dom"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
-import { HomeCard } from "./home/Home"
+import { HomeCard } from "./home/home"
 import { AnimalEntryCard } from "./entry/Entry"
 import { LeaderboardCard } from "./leaderboard/Leaderboard"
 import { FriendsCard } from "./friends/Friends"

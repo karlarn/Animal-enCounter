@@ -1,27 +1,204 @@
 {
   "users": [
     {
-      "email": "aol@aol.com",
-      "name": "Karl Nich",
+      "email": "Nich@nich.com",
+      "firstName": "Karl",
+      "lastName": "Nich",
       "id": 1
+    },
+    {
+      "email": "Beach@beach.com",
+      "firstName": "Sean",
+      "lastName": "Beach",
+      "id": 2
+    },
+    {
+      "email": "Bacon@bacon.com",
+      "firstName": "Kevin",
+      "lastName": "Bacon",
+      "id": 3
+    },
+    {
+      "email": "Blark@blark.com",
+      "firstName": "Bory",
+      "lastName": "Blark",
+      "id": 4
+    },
+    {
+      "email": "Smith@smith.com",
+      "firstName": "John",
+      "lastName": "Smith",
+      "id": 5
+    },
+    {
+      "email": "Huggenkiss@huggenkiss.com",
+      "firstName": "Amanda",
+      "lastName": "Huggenkiss",
+      "id": 6
     }
   ],
   "animals": [
     {
-      "name": "Lorax",
-      "where": "your mom's ",
-      "date": 1650904750042,
-      "xp": "",
-      "userId": 1,
+      "name": "Bunny",
+      "where": "Backyard",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:43:47.069Z",
+      "xp": 10,
+      "userId": 4,
       "id": 1
     },
     {
-      "name": "hey",
-      "where": "ho",
-      "date": "2022-04-25T16:42:06.010Z",
-      "xp": "",
-      "userId": 1,
+      "name": "Goldfish",
+      "where": "Friend's house",
+      "behavior": "Domestic",
+      "date": "2022-04-25T19:45:44.553Z",
+      "xp": 2,
+      "userId": 4,
       "id": 2
+    },
+    {
+      "name": "Gorilla",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:46:39.452Z",
+      "xp": 8,
+      "userId": 4,
+      "id": 3
+    },
+    {
+      "name": "Crow",
+      "where": "Crockett Park",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:47:37.353Z",
+      "xp": 1,
+      "userId": 5,
+      "id": 4
+    },
+    {
+      "name": "Puppy",
+      "where": "Neighborhood ",
+      "behavior": "Domestic",
+      "date": "2022-04-25T19:48:05.260Z",
+      "xp": 9,
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "Llama",
+      "where": "Side of the road",
+      "behavior": "Domestic",
+      "date": "2022-04-25T19:48:48.045Z",
+      "xp": 5,
+      "userId": 5,
+      "id": 6
+    },
+    {
+      "name": "Panda",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:49:26.852Z",
+      "xp": 1,
+      "userId": 6,
+      "id": 7
+    },
+    {
+      "name": "Flamingo",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:49:42.876Z",
+      "xp": 7,
+      "userId": 6,
+      "id": 8
+    },
+    {
+      "name": "Cat",
+      "where": "Alley way",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:50:08.021Z",
+      "xp": 6,
+      "userId": 6,
+      "id": 9
+    },
+    {
+      "name": "Pig",
+      "where": "Farm",
+      "behavior": "Domestic",
+      "date": "2022-04-25T19:51:10.229Z",
+      "xp": 6,
+      "userId": 3,
+      "id": 10
+    },
+    {
+      "name": "Hog",
+      "where": "On Tv",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:51:29.174Z",
+      "xp": 7,
+      "userId": 3,
+      "id": 11
+    },
+    {
+      "name": "Piglett",
+      "where": "On Tv",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:51:48.988Z",
+      "xp": 5,
+      "userId": 3,
+      "id": 12
+    },
+    {
+      "name": "Seagull",
+      "where": "The beach",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:52:33.645Z",
+      "xp": 4,
+      "userId": 2,
+      "id": 13
+    },
+    {
+      "name": "Whale",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:52:58.293Z",
+      "xp": 9,
+      "userId": 2,
+      "id": 14
+    },
+    {
+      "name": "Sea turtle",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:53:14.844Z",
+      "xp": 5,
+      "userId": 2,
+      "id": 15
+    },
+    {
+      "name": "Sloth",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:53:48.252Z",
+      "xp": 7,
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "name": "Beaver",
+      "where": "Behind a Restaurant ",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:54:03.676Z",
+      "xp": 4,
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "name": "Mouse",
+      "where": "Under the deck",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:54:29.581Z",
+      "xp": 9,
+      "userId": 1,
+      "id": 18
     }
   ],
   "friends": []
