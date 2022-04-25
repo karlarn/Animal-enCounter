@@ -9,15 +9,10 @@ function App() {
         sessionStorage.setItem("encounter_user", JSON.stringify(user))
         setIsAuthenticated(sessionStorage.getItem("encounter_user") !== null)
     }
-    
-    const clearUser = () => {
-        sessionStorage.clear();
-        setIsAuthenticated(sessionStorage.getItem("encounter_user") !== null)
-      }
 
   return (
     <>
-    <NavBar clearUser={clearUser} isAuthenticated={isAuthenticated}/>
+    <NavBar  isAuthenticated={isAuthenticated}/>
     <ApplicationView setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated}/>
     </>
   );
