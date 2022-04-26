@@ -4,7 +4,7 @@ import { Register } from "./auth/Register"
 import { HomeCard } from "./home/home"
 import { AnimalEntryCard } from "./entry/Entry"
 import { LeaderboardCard } from "./leaderboard/Leaderboard"
-import { FriendsCard } from "./friends/Friends"
+import { FriendComponent } from "./friends/Friends"
 import { EditAnimalForm } from "./entry/EditAnimalEntry"
 
 export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
@@ -26,7 +26,7 @@ export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
 
           <Route path="leaderboard" element={<LeaderboardCard/>} />
 
-          <Route path="friends" element={<FriendsCard/>} />
+          <Route path="friends" element={<FriendComponent/>} />
 
         </Route>
 

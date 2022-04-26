@@ -255,5 +255,16 @@
       "id": 24
     }
   ],
-  "friends": []
+  "friends": [
+    {
+      "userId": 2,
+      "currentUserId": 5,
+      "id": 1
+    },
+    {
+      "userId": 6,
+      "currentUserId": 5,
+      "id": 3
+    }
+  ]
 }
