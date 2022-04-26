@@ -1,36 +1,40 @@
 import { useState, useEffect } from "react"
-import { getAnimalById } from "../../manager/AnimalManager"
+import { getAnimalByUserId } from "../../manager/AnimalManager"
 import { AnimalCard } from "./AnimalCard"
 
-export const HomeCard= ()=>{
-    const [ animals , setAnimals] = useState([])
+export const HomeCard = () => {
+    // CREATES AN EMPTY ARRAY OF ANIMALS
+    const [animals, setAnimals] = useState([])
 
-    const getUserAnimals=(id)=>{
-        getAnimalById(id).then((animalArr)=>setAnimals(animalArr))
+    // FETCHES THE ANIMALS CREATED BY THE ID WE PASS TO IT 
+    const getUserAnimals = (id) => {
+        getAnimalByUserId(id).then((animalArr) => setAnimals(animalArr))
     }
 
-    const xpCounter=()=>{
-        let accumulatedXp=0
-        animals.map((animalObj)=>{
-            accumulatedXp= accumulatedXp + animalObj.xp
+    // LOOPS THROUGH AN ARRAY OF ANIMALS ADDS THE "XP" TO ONE VARIABLE AND RETURNS IT
+    const xpCounter = () => {
+        let accumulatedXp = 0
+        animals.forEach((animalObj) => {
+            accumulatedXp = accumulatedXp + animalObj.xp
         })
         return accumulatedXp
     }
 
-    useEffect(()=>{
+    // WHEN THE PAGE LOADS THIS GETS THE LOGGED IN USER AND PASSES IT TO GETUSERANIMALS TO SET ONLY THE ANIMALS OF THAT USER
+    useEffect(() => {
         getUserAnimals(JSON.parse(sessionStorage.getItem("encounter_user")).id)
     }, [])
     return (
         <>
-        <h1>Welcome, {JSON.parse(sessionStorage.getItem("encounter_user")).firstName}!<br/> You have so much XP, {xpCounter()}, to be exact!</h1>
-        <h3>Want more? add an entry</h3>
-        <div>
-        <h3>Checkout the animals you've already seen!</h3>
-        {animals.map((animal)=>(<AnimalCard
-            key={animal.id}
-            singleAnimal={animal} />))}
-        </div>
-        <h3></h3>
+            <h1>Welcome, {JSON.parse(sessionStorage.getItem("encounter_user")).firstName}!<br /> You have so much XP, {xpCounter()}, to be exact!</h1>
+            <h3>Want more? add an entry</h3>
+            <div>
+                <h3>Checkout the animals you've already seen!</h3>
+                {animals.map((animal) => (<AnimalCard
+                    key={animal.id}
+                    singleAnimal={animal} />))}
+            </div>
+
         </>
     )
 }
