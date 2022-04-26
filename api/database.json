@@ -75,7 +75,7 @@
       "id": 4
     },
     {
-      "name": "Puppy",
+      "name": "Small Dog",
       "where": "Neighborhood ",
       "behavior": "Domestic",
       "date": "2022-04-25T19:48:05.260Z",
@@ -199,6 +199,60 @@
       "xp": 9,
       "userId": 1,
       "id": 18
+    },
+    {
+      "name": "Crane",
+      "where": "By some docks",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:23:46.115Z",
+      "xp": 1,
+      "userId": 2,
+      "id": 19
+    },
+    {
+      "name": "Goose",
+      "where": "By the pond",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:24:41.945Z",
+      "xp": 1,
+      "userId": 1,
+      "id": 20
+    },
+    {
+      "name": "Boar",
+      "where": "The outback",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:25:39.649Z",
+      "xp": 4,
+      "userId": 3,
+      "id": 21
+    },
+    {
+      "name": "Dog",
+      "where": "Upstairs",
+      "behavior": "Domestic",
+      "date": "2022-04-26T14:26:57.338Z",
+      "xp": 9,
+      "userId": 4,
+      "id": 22
+    },
+    {
+      "name": "Woodpecker",
+      "where": "Backyard",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:27:46.289Z",
+      "xp": 3,
+      "userId": 6,
+      "id": 23
+    },
+    {
+      "name": "Turkey",
+      "where": "In the yard",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:28:25.609Z",
+      "xp": 5,
+      "userId": 5,
+      "id": 24
     }
   ],
   "friends": []
