@@ -3,13 +3,13 @@ import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { HomeCard } from "./home/home"
 import { AnimalEntryCard } from "./entry/Entry"
-import { LeaderboardCard } from "./leaderboard/Leaderboard"
+import { Leaderboard } from "./leaderboard/Leaderboard"
 import { FriendComponent } from "./friends/Friends"
 import { EditAnimalForm } from "./entry/EditAnimalEntry"
 
 export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
   const PrivateOutlet = () => {
-    return isAuthenticated ? <Outlet /> : <Navigate to="/login" />
+    return isAuthenticated ? <Outlet /> : <Navigate path="/login" />
   }
 
  
@@ -24,7 +24,7 @@ export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
           <Route path="animal" element={<AnimalEntryCard/>} />
           <Route path="animal/:animalId/edit" element={<EditAnimalForm/>} />
 
-          <Route path="leaderboard" element={<LeaderboardCard/>} />
+          <Route path="leaderboard" element={<Leaderboard/>} />
 
           <Route path="friends" element={<FriendComponent/>} />
 

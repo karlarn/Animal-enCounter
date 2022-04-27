@@ -32,3 +32,9 @@ export const updateAnimal = (singleAnimal) => {
     }).then(data => data.json());
 
 }
+
+// FETCHES ALL ANIMALS IN THE DB
+export const getAllAnimals=()=>{
+    return fetch('http://localhost:8088/animals')
+    .then(res => res.json())
+}
