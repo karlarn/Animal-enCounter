@@ -1,3 +1,4 @@
+// ANIMAL LIST FOR PROFILECARDJS 
 export const AnimalList = ({ singleAnimal }) => {
     return (
         <>
@@ -5,7 +6,7 @@ export const AnimalList = ({ singleAnimal }) => {
             <p>{singleAnimal.date}</p>
             <p>{singleAnimal.xp}</p>
             <p>{singleAnimal.behavior}</p>
-            
+
         </>
     )
 }

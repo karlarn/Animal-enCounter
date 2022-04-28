@@ -24,7 +24,7 @@ export const FriendComponent = () => {
             setFriends(friendsFromApi)
         })
     }
-    
+
     // FETCHES AN ARRAY OF USER OBJECTS AND SETS USERS USESTATE  
     const getUsers = () => {
         getAllUsers().then((usersFromApi) => { setUsers(usersFromApi) })

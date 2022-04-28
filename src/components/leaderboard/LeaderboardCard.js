@@ -8,8 +8,8 @@ export const LeaderboardCard = ({ singleUser }) => {
                     <h3>{singleUser.firstName} {singleUser.lastName}</h3>
                     <p>{singleUser.totalXp}</p>
                     <Link to={`/profile/${singleUser.id}`}>
-                <button>View Profile</button>
-            </Link>
+                        <button>View Profile</button>
+                    </Link>
                 </div>
             </div>
         </>

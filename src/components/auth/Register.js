@@ -44,9 +44,9 @@ export const Register = () => {
 					}),
 				})
 					.then((res) => res.json())
-					.then(()=>{
-							navigate("/login");
-						}
+					.then(() => {
+						navigate("/login");
+					}
 					);
 			} else {
 				setConflictDialog(true);

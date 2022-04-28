@@ -13,30 +13,30 @@ export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
     return isAuthenticated ? <Outlet /> : <Navigate path="/login" />
   }
 
- 
+
 
   return (
     <>
       <Routes>
         <Route path="/" element={<PrivateOutlet />}>
 
-          <Route  path="home" element={<HomeCard />} />
+          <Route path="home" element={<HomeCard />} />
 
-          <Route path="animal" element={<AnimalEntryCard/>} />
-          <Route path="animal/:animalId/edit" element={<EditAnimalForm/>} />
+          <Route path="animal" element={<AnimalEntryCard />} />
+          <Route path="animal/:animalId/edit" element={<EditAnimalForm />} />
 
-          <Route path="leaderboard" element={<Leaderboard/>} />
+          <Route path="leaderboard" element={<Leaderboard />} />
 
-          <Route path="friends" element={<FriendComponent/>} />
+          <Route path="friends" element={<FriendComponent />} />
 
-          <Route path="profile/:userId" element={<ProfileCard/>} />
+          <Route path="profile/:userId" element={<ProfileCard />} />
 
         </Route>
 
 
 
-        <Route  path="/login" element={<Login setAuthUser={setAuthUser} />} />
-        <Route  path="/register" element={<Register setAuthUser={setAuthUser} />} />
+        <Route path="/login" element={<Login setAuthUser={setAuthUser} />} />
+        <Route path="/register" element={<Register setAuthUser={setAuthUser} />} />
 
 
       </Routes>

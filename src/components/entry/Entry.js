@@ -16,7 +16,7 @@ export const AnimalEntryCard = () => {
 
     const navigate = useNavigate()
 
-    // WHEN 'CHANGE' HAPPENS IN THE FORM THE VALUE IS CHANGED IN THE OBJECT
+    // WHEN 'CHANGE' HAPPENS IN THE FORM THE VALUE IS CHANGED IN THE OBJECT USESTATE
     const handleControlledInputChange = (event) => {
 
         const newAnimal = { ...animal }
