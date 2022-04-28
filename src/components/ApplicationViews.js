@@ -6,6 +6,7 @@ import { AnimalEntryCard } from "./entry/Entry"
 import { Leaderboard } from "./leaderboard/Leaderboard"
 import { FriendComponent } from "./friends/Friends"
 import { EditAnimalForm } from "./entry/EditAnimalEntry"
+import { ProfileCard } from "./profiles/ProfileCard"
 
 export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
   const PrivateOutlet = () => {
@@ -27,6 +28,8 @@ export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
           <Route path="leaderboard" element={<Leaderboard/>} />
 
           <Route path="friends" element={<FriendComponent/>} />
+
+          <Route path="profile/:userId" element={<ProfileCard/>} />
 
         </Route>
 

@@ -9,9 +9,9 @@ export const addAnimal = (newAnimal) => {
     }).then(response => response.json())
 }
 
-// RETURNS ALL ANIMALS FROM DB RELATING TO A SINGLE USER ID
+// RETURNS ALL ANIMALS FROM DB RELATING TO A SINGLE USER ID AND SORTS IT BY DATE
 export const getAnimalByUserId = (currentUserId) => {
-    return fetch(`http://localhost:8088/animals?userId=${currentUserId}`)
+    return fetch(`http://localhost:8088/animals?userId=${currentUserId}&_sort=date&_order=desc`)
         .then(res => res.json())
 }
 

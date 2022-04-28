@@ -307,6 +307,114 @@
       "xp": 2,
       "userId": 6,
       "id": 30
+    },
+    {
+      "name": "Polar Bear",
+      "where": "TV",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:28:07.311Z",
+      "xp": 5,
+      "userId": 6,
+      "id": 31
+    },
+    {
+      "name": "Humming Bird",
+      "where": "Backyard",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:29:01.271Z",
+      "xp": 9,
+      "userId": 5,
+      "id": 32
+    },
+    {
+      "name": "Pygmy",
+      "where": "TV",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:29:45.527Z",
+      "xp": 4,
+      "userId": 3,
+      "id": 33
+    },
+    {
+      "name": "Platypus",
+      "where": "TV",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:30:58.281Z",
+      "xp": 6,
+      "userId": 4,
+      "id": 34
+    },
+    {
+      "name": "Tortoise",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:31:58.183Z",
+      "xp": 9,
+      "userId": 1,
+      "id": 35
+    },
+    {
+      "name": "Crab",
+      "where": "In the sand",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:32:43.334Z",
+      "xp": 6,
+      "userId": 2,
+      "id": 36
+    },
+    {
+      "name": "Human",
+      "where": "The store ",
+      "behavior": "Domestic",
+      "date": "2022-04-28T14:22:14.521Z",
+      "xp": 5,
+      "userId": 1,
+      "id": 37
+    },
+    {
+      "name": "Sea Cucumber",
+      "where": "Ocean",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:24:48.504Z",
+      "xp": 10,
+      "userId": 2,
+      "id": 38
+    },
+    {
+      "name": "Snake",
+      "where": "In the grass",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:25:40.581Z",
+      "xp": 9,
+      "userId": 4,
+      "id": 39
+    },
+    {
+      "name": "Deer",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:26:31.228Z",
+      "xp": 6,
+      "userId": 5,
+      "id": 40
+    },
+    {
+      "name": "Swine",
+      "where": "At  a farm",
+      "behavior": "Domestic",
+      "date": "2022-04-28T14:27:26.826Z",
+      "xp": 6,
+      "userId": 3,
+      "id": 41
+    },
+    {
+      "name": "Badger",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:28:22.545Z",
+      "xp": 4,
+      "userId": 6,
+      "id": 42
     }
   ],
   "friends": [
