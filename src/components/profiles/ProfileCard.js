@@ -6,33 +6,41 @@ import { getFriendsByCurrentUserId } from "../../manager/FriendManager"
 import { ProfileFriendList } from "./ProfileFriendList"
 import { AnimalList } from "./ProfileAnimalList"
 
-export const ProfileCard=()=>{
-    const [ user, setUser]= useState({})
+export const ProfileCard = () => {
+    // SETS THE STATE OF THE USER TO AN EMPTY OBJECT TO START
+    const [user, setUser] = useState({})
 
-    const [ userAnimals, setUserAnimals ]= useState([])
+    // SETS THE STATE OF THE USERS ANIMALS TO AN EMPTY ARRAY START
+    const [userAnimals, setUserAnimals] = useState([])
 
-    const [ userFriends, setUserFriends ]= useState([])
+    // SETS THE STATE OF USERS FRIENDS TO AN EMPTY ARRAY TO START
+    const [userFriends, setUserFriends] = useState([])
 
-    const {userId}=useParams()
+    // TAKES IN A PORTION OF THE URL TO RENDER SPECIFIC INFORMATION TO THE USER IN QUESTION
+    const { userId } = useParams()
 
-    const getUserForProfile=(userId)=>{
-        getUserById(userId).then((userFromApi)=>{
+    // FUNCTION TO SET THE STATE OF THE USER
+    const getUserForProfile = (userId) => {
+        getUserById(userId).then((userFromApi) => {
             setUser(userFromApi)
         })
     }
 
-    const getProfileUsersAnimals=(userId)=>{
-        getAnimalByUserId(userId).then((animalsFromApi)=>{
+    // FUNCTION TO SET THE STATE OF THE USERS ANIMALS
+    const getProfileUsersAnimals = (userId) => {
+        getAnimalByUserId(userId).then((animalsFromApi) => {
             setUserAnimals(animalsFromApi)
         })
     }
 
-    const getProfileUsersFriends=(userId)=>{
-        getFriendsByCurrentUserId(userId).then((friendsFromApi)=>{
+    // FUNCTION TO SET THE STATE OF THE USERS FRIENDS
+    const getProfileUsersFriends = (userId) => {
+        getFriendsByCurrentUserId(userId).then((friendsFromApi) => {
             setUserFriends(friendsFromApi)
         })
     }
 
+    // LOOPS THE USERANIMALS STATE AND ADDS ALL THE XP TO A SINGLE VARIABLE  
     const xpCounter = () => {
         let accumulatedXp = 0
         userAnimals.forEach((animalObj) => {
@@ -41,7 +49,8 @@ export const ProfileCard=()=>{
         return accumulatedXp
     }
 
-    useEffect(()=>{
+    // WHEN THE PAGE LOADS THIS USES THREE FUNCTIONS WITH USEPARAMS TO FETCH ALL INFORATION NEEDED FOR THE PAGE. WILL RELOAD IF THE USERID IN USEPARAMS EVER CHANGES
+    useEffect(() => {
         getUserForProfile(userId)
         getProfileUsersAnimals(userId)
         getProfileUsersFriends(userId)
@@ -50,24 +59,24 @@ export const ProfileCard=()=>{
 
     return (
         <>
-        <h1>Checkout {user.firstName}'s Profile!</h1>
-        <h2>They are on a roll with {xpCounter()} total XP!</h2>
-        <h1>All of {user.firstName}'s Friends:</h1>
-        {userFriends.map(friend => {
-                    return <ProfileFriendList
-                        key={friend.id}
-                        singleFriend={friend}
-                        />;
-                })
+            <h1>Checkout {user.firstName}'s Profile!</h1>
+            <h2>They are on a roll with {xpCounter()} total XP!</h2>
+            <h1>All of {user.firstName}'s Friends:</h1>
+            {userFriends.map(friend => {
+                return <ProfileFriendList
+                    key={friend.id}
+                    singleFriend={friend}
+                />;
+            })
 
-                }
-        <h1>All of {user.firstName}'s Animals:</h1>
-        {userAnimals.map(animal=>{
-            return <AnimalList
-            key={animal.id}
-            singleAnimal={animal}/>
-        })}
-        
+            }
+            <h1>All of {user.firstName}'s Animals:</h1>
+            {userAnimals.map(animal => {
+                return <AnimalList
+                    key={animal.id}
+                    singleAnimal={animal} />
+            })}
+
         </>
     )
 }

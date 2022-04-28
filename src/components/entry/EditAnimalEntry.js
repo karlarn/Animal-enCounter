@@ -3,13 +3,13 @@ import { useNavigate, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
-export const EditAnimalForm=()=>{
+export const EditAnimalForm = () => {
     // SETS AN EMPTY OBJECT
     const [animal, setAnimal] = useState({ name: "", where: "", behavior: "" })
 
     // GETS THE ID OF A SPECIFIC ANIMAL OBJECT BASED OFF THE URL
     const { animalId } = useParams();
-    
+
     // NAVIGATES TO A DIFFERENT SPECIFIED ROUTE
     const navigate = useNavigate();
 
@@ -36,7 +36,7 @@ export const EditAnimalForm=()=>{
             )
     }
 
-    // WHEN THE PAGE LOADS IT FETCHES A SPECIFIC ANIMAL OBJECT BASED ON USEPARAMS AND SETS IT TO THE USESTATE. WILL RERENDER IF THE ANIMALID CHANGES.
+    // WHEN THE PAGE LOADS IT FETCHES A SPECIFIC ANIMAL OBJECT BASED ON USEPARAMS AND SETS IT TO THE USESTATE. WILL RERENDER IF THE ANIMALID IN THE USEPARAMS CHANGES.
     useEffect(() => {
         getAnimalById(animalId)
             .then(animalObj => {
@@ -64,8 +64,8 @@ export const EditAnimalForm=()=>{
                 <div className="form-group">
                     <label htmlFor="behavior">Was this animal domestic or wild?</label><br />
                     <input type="radio" onChange={handleFieldChange} value="Domestic"
-                    checked={animal.behavior==="Domestic"} name="behavior" id="behavior" /> Domestic <br />
-                    <input type="radio" onChange={handleFieldChange} value="Wild" checked={animal.behavior==="Wild"} name="behavior" id="behavior" /> Wild
+                        checked={animal.behavior === "Domestic"} name="behavior" id="behavior" /> Domestic <br />
+                    <input type="radio" onChange={handleFieldChange} value="Wild" checked={animal.behavior === "Wild"} name="behavior" id="behavior" /> Wild
                 </div>
             </fieldset>
 

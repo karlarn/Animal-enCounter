@@ -1,7 +1,7 @@
 // RETURNS AN ARRAY OF USER OBJECTS 
-export const getAllUsers=()=>{
+export const getAllUsers = () => {
     return fetch('http://localhost:8088/users')
-    .then(res => res.json())
+        .then(res => res.json())
 }
 
 // RETURNS A USER OBJECT BASED ON THE ID
