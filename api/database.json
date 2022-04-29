@@ -415,6 +415,78 @@
       "xp": 4,
       "userId": 6,
       "id": 42
+    },
+    {
+      "name": "Dolphin",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-04-28T20:12:32.679Z",
+      "xp": 2,
+      "userId": 6,
+      "id": 43
+    },
+    {
+      "name": "Gopher",
+      "where": "In the ground ",
+      "behavior": "Wild",
+      "date": "2022-04-29T15:33:44.064Z",
+      "xp": 7,
+      "userId": 1,
+      "id": 44
+    },
+    {
+      "name": "Jelly Fish",
+      "where": "The Ocean",
+      "behavior": "Wild",
+      "date": "2022-04-29T15:35:13.232Z",
+      "xp": 3,
+      "userId": 2,
+      "id": 45
+    },
+    {
+      "name": "Pug",
+      "where": "In a tent",
+      "behavior": "Domestic",
+      "date": "2022-04-29T15:38:24.249Z",
+      "xp": 7,
+      "userId": 5,
+      "id": 46
+    },
+    {
+      "name": "Ground hog",
+      "where": "In the ground",
+      "behavior": "Wild",
+      "date": "2022-04-29T15:40:00.391Z",
+      "xp": 2,
+      "userId": 4,
+      "id": 47
+    },
+    {
+      "name": "Cop",
+      "where": "In an unmarked car",
+      "behavior": "Domestic",
+      "date": "2022-04-29T15:40:52.091Z",
+      "xp": 3,
+      "userId": 3,
+      "id": 48
+    },
+    {
+      "name": "Koala",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-29T15:42:50.319Z",
+      "xp": 8,
+      "userId": 6,
+      "id": 49
+    },
+    {
+      "name": "Beta",
+      "where": "In a bowl",
+      "behavior": "Domestic",
+      "date": "2022-04-29T18:32:44.604Z",
+      "xp": 3,
+      "userId": 1,
+      "id": 50
     }
   ],
   "friends": [
@@ -429,29 +501,14 @@
       "id": 3
     },
     {
-      "userId": 4,
-      "currentUserId": 2,
-      "id": 4
-    },
-    {
       "userId": 3,
       "currentUserId": 2,
       "id": 6
     },
     {
-      "userId": 1,
-      "currentUserId": 3,
-      "id": 7
-    },
-    {
       "userId": 2,
       "currentUserId": 3,
       "id": 8
-    },
-    {
-      "userId": 6,
-      "currentUserId": 4,
-      "id": 9
     },
     {
       "userId": 3,
@@ -464,19 +521,34 @@
       "id": 11
     },
     {
-      "userId": 3,
-      "currentUserId": 6,
-      "id": 12
-    },
-    {
-      "userId": 4,
-      "currentUserId": 6,
-      "id": 13
+      "userId": 6,
+      "currentUserId": 2,
+      "id": 17
     },
     {
       "userId": 1,
+      "currentUserId": 4,
+      "id": 18
+    },
+    {
+      "userId": 2,
       "currentUserId": 6,
-      "id": 14
+      "id": 19
+    },
+    {
+      "userId": 2,
+      "currentUserId": 1,
+      "id": 30
+    },
+    {
+      "userId": 3,
+      "currentUserId": 1,
+      "id": 31
+    },
+    {
+      "userId": 6,
+      "currentUserId": 1,
+      "id": 33
     }
   ]
 }

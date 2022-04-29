@@ -64,7 +64,7 @@ export const Leaderboard = () => {
 
     return (
         <>
-            <h1>This is the leaderboard</h1>
+            <h1>Let's see who is gaining all the XP!</h1>
             {sortedArr.map(user =>
                 <LeaderboardCard
                     key={user.id}
