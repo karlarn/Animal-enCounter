@@ -5,7 +5,7 @@ export const AnimalCard = ({ singleAnimal }) => {
     return (
         <>
             <h2>{singleAnimal.name}</h2>
-            <p>{singleAnimal.date}</p>
+            <p>{singleAnimal.date.slice([0],[10])}</p>
             <p>{singleAnimal.xp}</p>
             <p>{singleAnimal.behavior}</p>
             {/* TAKES YOU TO THE EDIT ANIMAL FORM WITH THE SPECIFIC ANIMAL ID */}

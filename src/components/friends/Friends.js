@@ -112,13 +112,7 @@ export const FriendComponent = () => {
                         handleAddFriend={handleAddFriend}
                     />)
                 }
-                ) : filterUsersThatArentFriends().map((singleResult) => {
-                    return (<FriendSearchResult
-                        key={singleResult.id}
-                        singleResult={singleResult}
-                        handleAddFriend={handleAddFriend}
-                    />)
-                })}
+                ) : ""}
 
             </section>
             <h1>Take a look at all the friends you've accumulated!</h1>
