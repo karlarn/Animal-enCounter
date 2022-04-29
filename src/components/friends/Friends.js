@@ -5,6 +5,7 @@ import { FriendCard } from "./FriendCard"
 import { useEffect, useState } from "react"
 
 
+
 export const FriendComponent = () => {
     // STARTS BY SETTING AN EMPTY ARRAY WILL BE POPULATED WITH CURRENT USERS FRIENDS AFTER USEEFFECT
     const [friends, setFriends] = useState([])
@@ -25,60 +26,81 @@ export const FriendComponent = () => {
         })
     }
 
-    // FETCHES AN ARRAY OF USER OBJECTS AND SETS USERS USESTATE  
+    // FETCHES ALL USER OBJECTS FROM DB AND SETS USERS USESTATE  
     const getUsers = () => {
-        getAllUsers().then((usersFromApi) => { setUsers(usersFromApi) })
+        getAllUsers().then((usersFromApi) => {
+            setUsers(usersFromApi)
+        })
+    }
+
+    // LOOPS THE FRIENDS USESTATE AND PUSHES THE USERID TO A NEW ARRAY THEN PUSHES THE SESSION STORAGE ID TO THE SAME ARRAY
+    // CREATES A VARIABLE  THAT FILTERINGS THE USERS USESTATE AND RETURNS ANYTHING THAT ISNT INCLUDED IN THE NEW ARRAY WE JUST MADE
+    const filterUsersThatArentFriends = () => {
+        let friendIdArr = []
+        friends.forEach((i) => {
+            friendIdArr.push(i.userId)
+        })
+
+        friendIdArr.push(JSON.parse(sessionStorage.getItem("encounter_user")).id)
+
+
+        const filter = users.filter((user) => {
+
+            return !friendIdArr.includes(user.id)
+        })
+        return filter
+
     }
 
     // WHEN ONCHANGE OF THE TEXT INPUT FOR "SEARCH FOR A USER" HAPPENS THIS TAKES IN THE VALUE AND SETS IT TO THE SEARCHINPUT USESTATE 
-    // AS LONG AS SEARCHNPUT IS NOT AN EMPTY STRING IT WILL FILTER ALL THE USERS TO SEE IF ANY OF THEM HAVE MATCHING VALUES WITH SEARCHINPUT AND SETS THE FILTEREDUSERARRAY WITH THE MATCHING USERS
-    // IF SEARCHINPUT IS AN EMPTY STRING THE FILTEREDUSERARRAY GETS SET TO ALL USERS 
+    // AS LONG AS SEARCHNPUT IS NOT AN EMPTY STRING IT WILL FILTER THE FILTEREDUSERSTHATARENTFRIENDS ARRAY TO SEE IF ANY OF THEM HAVE MATCHING VALUES WITH SEARCHINPUT AND SETS THE FILTEREDUSERARRAY WITH THE MATCHING USERS
+    // IF SEARCHINPUT IS AN EMPTY STRING THE FILTEREDUSERARRAY GETS SET TO ALL FILTERUSERSTHATARENTFRIENDS
     const searchItems = (searchValue) => {
         setSearchInput(searchValue)
         if (searchInput !== '') {
-            const filteredUsers = users.filter((item) => {
+            const filteredUsers = filterUsersThatArentFriends().filter((item) => {
                 return Object.values(item).join('').toLowerCase().includes(searchInput.toLowerCase())
             })
             setFilteredUserArr(filteredUsers)
         }
         else {
-            setFilteredUserArr(users)
+            setFilteredUserArr(filterUsersThatArentFriends())
         }
     }
 
-    // REMOVES A FRIEND OBJECT IN THE DB BASED ON A SPECIFIC ID THEN FETCHES THE ARRAY OF FRIEND OBJECTS AGAIN AND RESETS THE STATE 
+    // REMOVES A FRIEND OBJECT IN THE DB BASED ON A SPECIFIC ID THEN FETCHES THE ARRAY OF FRIEND OBJECTS AND RESETS THE STATE 
     const handleDeleteFriend = (id) => {
         deleteFriend(id)
-            .then(() => getFriendsByCurrentUserId(JSON.parse(sessionStorage.getItem("encounter_user")).id)
-                .then((friendList) => setFriends(friendList))
+            .then(() =>
+                getFriends()
             )
     }
 
-    // ADDS A FRIEND OBJECT TO THE DB BASED ON BOTH USER IDS THEN CALLS GETFRIENDS
+    // ADDS A FRIEND OBJECT TO THE DB BASED ON BOTH USER IDS THEN CALLS GETFRIENDS, SETS THE SEARCHINPUT STATE TO AN EMPTY STRING AS WELL AS THE TEXT BOX'S INPUT VALUE
     const handleAddFriend = (friendId) => {
         const friendObj = {
             userId: friendId,
             currentUserId: JSON.parse(sessionStorage.getItem("encounter_user")).id
         }
-        addFriend(friendObj).then(() => { getFriends() })
+        addFriend(friendObj).then(() => {
+            getFriends()
+            setSearchInput('')
+            document.getElementById("searchInput").value = ""
+        })
 
     }
 
-    // WHEN THE PAGE INITIALLY LOADS THIS CALLS THE GETUSERS FUNCTION
-    useEffect(() => {
-        getUsers()
-    }, [])
-
-    // WHEN THE PAGE INITIALLY LOADS THIS CALLS THE GETFRIENDS FUNCTION 
+    // WHEN THE PAGE INITIALLY LOADS THIS CALLS THE GETUSERS AND GETFRIENDS FUNCTION
     useEffect(() => {
         getFriends()
+        getUsers()
     }, [])
 
     return (
         <>
             <h1>Want to look for more friends to add?</h1>
             <section className="searchInput">
-                <input type="text" placeholder="Search for a User"
+                <input id="searchInput" type="text" placeholder="Search for a User"
                     onChange={(e) => searchItems(e.target.value)} ></input>
             </section>
             {/* TERNARY STATEMENT IF SEARCH INPUT IS GREATER THAN 1 RENDER THE FRIENDSEARCHRESULT USING FILTEREDUSERARR ELSE RENDER IT WITH USERS ARRAY */}
@@ -90,7 +112,13 @@ export const FriendComponent = () => {
                         handleAddFriend={handleAddFriend}
                     />)
                 }
-                ) : ""}
+                ) : filterUsersThatArentFriends().map((singleResult) => {
+                    return (<FriendSearchResult
+                        key={singleResult.id}
+                        singleResult={singleResult}
+                        handleAddFriend={handleAddFriend}
+                    />)
+                })}
 
             </section>
             <h1>Take a look at all the friends you've accumulated!</h1>
