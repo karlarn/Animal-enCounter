@@ -35,6 +35,30 @@
       "firstName": "Amanda",
       "lastName": "Huggenkiss",
       "id": 6
+    },
+    {
+      "email": "Walker@walker.com",
+      "firstName": "Jay",
+      "lastName": "Walker",
+      "id": 7
+    },
+    {
+      "email": "Wood@wood.com",
+      "firstName": "Holly",
+      "lastName": "Wood",
+      "id": 8
+    },
+    {
+      "email": "Gater@gater.com",
+      "firstName": "Ally",
+      "lastName": "Gater",
+      "id": 9
+    },
+    {
+      "email": "Nasium@nasium.com",
+      "firstName": "Jim",
+      "lastName": "Nasium",
+      "id": 10
     }
   ],
   "animals": [
@@ -478,6 +502,384 @@
       "xp": 8,
       "userId": 6,
       "id": 49
+    },
+    {
+      "name": "Giraffe",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-05-02T14:43:06.539Z",
+      "xp": 7,
+      "userId": 1,
+      "id": 50
+    },
+    {
+      "name": "Cuttlefish",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-05-02T14:43:48.056Z",
+      "xp": 1,
+      "userId": 2,
+      "id": 51
+    },
+    {
+      "name": "Shoat",
+      "where": "Backyard",
+      "behavior": "Wild",
+      "date": "2022-05-02T14:45:33.527Z",
+      "xp": 4,
+      "userId": 3,
+      "id": 52
+    },
+    {
+      "name": "Mall Rat",
+      "where": "Public",
+      "behavior": "Domestic",
+      "date": "2022-05-02T14:46:43.734Z",
+      "xp": 10,
+      "userId": 4,
+      "id": 53
+    },
+    {
+      "name": "Horse",
+      "where": "Pasture",
+      "behavior": "Domestic",
+      "date": "2022-05-02T14:47:57.635Z",
+      "xp": 3,
+      "userId": 5,
+      "id": 54
+    },
+    {
+      "name": "Frog",
+      "where": "Pond",
+      "behavior": "Wild",
+      "date": "2022-05-02T14:48:46.706Z",
+      "xp": 7,
+      "userId": 6,
+      "id": 55
+    },
+    {
+      "name": "Llama",
+      "where": "Side of the road",
+      "behavior": "Domestic",
+      "date": "2022-04-25T19:48:48.045Z",
+      "xp": 5,
+      "userId": 7,
+      "id": 56
+    },
+    {
+      "name": "Panda",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:49:26.852Z",
+      "xp": 1,
+      "userId": 7,
+      "id": 57
+    },
+    {
+      "name": "Flamingo",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:49:42.876Z",
+      "xp": 7,
+      "userId": 7,
+      "id": 58
+    },
+    {
+      "name": "Cat",
+      "where": "Alley way",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:50:08.021Z",
+      "xp": 6,
+      "userId": 7,
+      "id": 59
+    },
+    {
+      "name": "Pig",
+      "where": "Farm",
+      "behavior": "Domestic",
+      "date": "2022-04-25T19:51:10.229Z",
+      "xp": 6,
+      "userId": 7,
+      "id": 60
+    },
+    {
+      "name": "Hog",
+      "where": "On Tv",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:51:29.174Z",
+      "xp": 7,
+      "userId": 7,
+      "id": 61
+    },
+    {
+      "name": "Piglett",
+      "where": "On Tv",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:51:48.988Z",
+      "xp": 5,
+      "userId": 7,
+      "id": 62
+    },
+    {
+      "name": "Seagull",
+      "where": "The beach",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:52:33.645Z",
+      "xp": 4,
+      "userId": 7,
+      "id": 63
+    },
+    {
+      "name": "Whale",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:52:58.293Z",
+      "xp": 9,
+      "userId": 7,
+      "id": 64
+    },
+    {
+      "name": "Human",
+      "where": "The store ",
+      "behavior": "Domestic",
+      "date": "2022-04-28T14:22:14.521Z",
+      "xp": 5,
+      "userId": 8,
+      "id": 65
+    },
+    {
+      "name": "Sea Cucumber",
+      "where": "Ocean",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:24:48.504Z",
+      "xp": 10,
+      "userId": 8,
+      "id": 66
+    },
+    {
+      "name": "Snake",
+      "where": "In the grass",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:25:40.581Z",
+      "xp": 9,
+      "userId": 8,
+      "id": 67
+    },
+    {
+      "name": "Deer",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:26:31.228Z",
+      "xp": 6,
+      "userId": 8,
+      "id": 68
+    },
+    {
+      "name": "Swine",
+      "where": "At  a farm",
+      "behavior": "Domestic",
+      "date": "2022-04-28T14:27:26.826Z",
+      "xp": 6,
+      "userId": 8,
+      "id": 69
+    },
+    {
+      "name": "Badger",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:28:22.545Z",
+      "xp": 4,
+      "userId": 8,
+      "id": 70
+    },
+    {
+      "name": "Dolphin",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-04-28T20:12:32.679Z",
+      "xp": 2,
+      "userId": 8,
+      "id": 71
+    },
+    {
+      "name": "Gopher",
+      "where": "In the ground ",
+      "behavior": "Wild",
+      "date": "2022-04-29T15:33:44.064Z",
+      "xp": 7,
+      "userId": 8,
+      "id": 72
+    },
+    {
+      "name": "Jelly Fish",
+      "where": "The Ocean",
+      "behavior": "Wild",
+      "date": "2022-04-29T15:35:13.232Z",
+      "xp": 3,
+      "userId": 8,
+      "id": 73
+    },
+    {
+      "name": "Tortoise",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:31:58.183Z",
+      "xp": 9,
+      "userId": 9,
+      "id": 74
+    },
+    {
+      "name": "Crab",
+      "where": "In the sand",
+      "behavior": "Wild",
+      "date": "2022-04-27T20:32:43.334Z",
+      "xp": 6,
+      "userId": 9,
+      "id": 75
+    },
+    {
+      "name": "Human",
+      "where": "The store ",
+      "behavior": "Domestic",
+      "date": "2022-04-28T14:22:14.521Z",
+      "xp": 5,
+      "userId": 9,
+      "id": 76
+    },
+    {
+      "name": "Sea Cucumber",
+      "where": "Ocean",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:24:48.504Z",
+      "xp": 10,
+      "userId": 9,
+      "id": 77
+    },
+    {
+      "name": "Snake",
+      "where": "In the grass",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:25:40.581Z",
+      "xp": 9,
+      "userId": 9,
+      "id": 78
+    },
+    {
+      "name": "Deer",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:26:31.228Z",
+      "xp": 6,
+      "userId": 9,
+      "id": 79
+    },
+    {
+      "name": "Swine",
+      "where": "At  a farm",
+      "behavior": "Domestic",
+      "date": "2022-04-28T14:27:26.826Z",
+      "xp": 6,
+      "userId": 9,
+      "id": 80
+    },
+    {
+      "name": "Badger",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-04-28T14:28:22.545Z",
+      "xp": 4,
+      "userId": 9,
+      "id": 81
+    },
+    {
+      "name": "Dolphin",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-04-28T20:12:32.679Z",
+      "xp": 2,
+      "userId": 9,
+      "id": 82
+    },
+    {
+      "name": "Sea turtle",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:53:14.844Z",
+      "xp": 5,
+      "userId": 10,
+      "id": 83
+    },
+    {
+      "name": "Sloth",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:53:48.252Z",
+      "xp": 7,
+      "userId": 10,
+      "id": 84
+    },
+    {
+      "name": "Beaver",
+      "where": "Behind a Restaurant ",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:54:03.676Z",
+      "xp": 4,
+      "userId": 10,
+      "id": 85
+    },
+    {
+      "name": "Mouse",
+      "where": "Under the deck",
+      "behavior": "Wild",
+      "date": "2022-04-25T19:54:29.581Z",
+      "xp": 9,
+      "userId": 10,
+      "id": 86
+    },
+    {
+      "name": "Crane",
+      "where": "By some docks",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:23:46.115Z",
+      "xp": 1,
+      "userId": 10,
+      "id": 87
+    },
+    {
+      "name": "Goose",
+      "where": "By the pond",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:24:41.945Z",
+      "xp": 1,
+      "userId": 10,
+      "id": 88
+    },
+    {
+      "name": "Boar",
+      "where": "The outback",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:25:39.649Z",
+      "xp": 4,
+      "userId": 10,
+      "id": 89
+    },
+    {
+      "name": "Dog",
+      "where": "Upstairs",
+      "behavior": "Domestic",
+      "date": "2022-04-26T14:26:57.338Z",
+      "xp": 9,
+      "userId": 10,
+      "id": 90
+    },
+    {
+      "name": "Woodpecker",
+      "where": "Backyard",
+      "behavior": "Wild",
+      "date": "2022-04-26T14:27:46.289Z",
+      "xp": 3,
+      "userId": 10,
+      "id": 91
     }
   ],
   "friends": [

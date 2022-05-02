@@ -52,6 +52,9 @@ export const Leaderboard = () => {
     // SORTS AN ARRAY OF OBJECTS BASED ON THEIR TOTAL XP NUMBER
     const sortedArr = userArrWithXp().sort((a, b) => { return b.totalXp - a.totalXp })
 
+    // CREATES AN ARRAY OF TOP FIVE XP USERS BY SLICING THE SORTED ARRAY
+    const topFive = sortedArr.slice([0],[5])
+
     // WHEN THE PAGE LOADS GETANIMALS IS CALLED 
     useEffect(() => {
         getAnimals()
@@ -65,7 +68,7 @@ export const Leaderboard = () => {
     return (
         <>
             <h1>Let's see who is gaining all the XP!</h1>
-            {sortedArr.map(user =>
+            {topFive.map(user =>
                 <LeaderboardCard
                     key={user.id}
                     singleUser={user}
