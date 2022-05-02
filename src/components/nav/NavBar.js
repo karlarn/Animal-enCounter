@@ -10,11 +10,11 @@ export const NavBar = () => {
     // SERIES OF LINKS IN A NAVBAR THAT MOVES YOU TO DIFFERENT VIEWS OF THE APP 
     return (
         <>
-            <picture>
-                <img src={"/images/pandaLogo.png"} alt="Panda Waving Logo" />
-            </picture>
 
             <nav>
+            <picture>
+                <img className="pandaLogo" src={"/images/pandaLogo.png"} alt="Panda Waving Logo" />
+            </picture>
                 <ul>
                     <li>
                         <Link className="nav-link" to="/home">Profile</Link>

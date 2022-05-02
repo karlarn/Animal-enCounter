@@ -4,14 +4,18 @@ import { Link } from "react-router-dom"
 export const AnimalCard = ({ singleAnimal }) => {
     return (
         <>
-            <h2>{singleAnimal.name}</h2>
-            <p>{singleAnimal.date.slice([0],[10])}</p>
-            <p>{singleAnimal.xp}</p>
-            <p>{singleAnimal.behavior}</p>
+        <div className="animalCard">
+            <h2 className="animalHeader">{singleAnimal.name} </h2>
+            <p className="animalP">XP: {singleAnimal.xp}</p>
+            <p className="animalP">Date: {singleAnimal.date.slice([0],[10])}</p>
+            <p className="animalP">EnCounter location: {singleAnimal.where}</p>
+            <p className="animalP">Behavior:{singleAnimal.behavior} </p>
+            
             {/* TAKES YOU TO THE EDIT ANIMAL FORM WITH THE SPECIFIC ANIMAL ID */}
-            <Link to={`/animal/${singleAnimal.id}/edit`}>
+            <Link className="animalLink" to={`/animal/${singleAnimal.id}/edit`}>
                 <button>Edit</button>
             </Link>
+            </div>
         </>
     )
 }

@@ -26,10 +26,9 @@ export const HomeCard = () => {
     }, [])
     return (
         <>
-            <h1>Welcome, {JSON.parse(sessionStorage.getItem("encounter_user")).firstName}!<br /> You have so much XP, {xpCounter()}, to be exact!</h1>
-            <h3>Want more? add an entry</h3>
-            <div>
-                <h3>Checkout the animals you've already seen!</h3>
+            <h1>Hey {JSON.parse(sessionStorage.getItem("encounter_user")).firstName}!</h1>
+            <h2>You've enCountered so many animals and received {xpCounter()} XP so far!</h2>
+            <div className="animalList">
                 {animals.map((animal) => (<AnimalCard
                     key={animal.id}
                     singleAnimal={animal} />))}

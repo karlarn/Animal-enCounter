@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #9f9fad;
+  margin-bottom: 5em;
 }
 
 code {
@@ -12,3 +14,78 @@ code {
     monospace;
 }
 
+.pandaLogo{
+  max-width: 12%;
+  padding: 1em 1em 0 1em;
+   
+}
+
+nav {
+  background-color:#aecfdf;
+  
+}
+
+.nav-link:visited{
+  color: black;
+}
+.nav-link:link{
+  color: black;
+}
+
+.nav-link:hover{
+  text-decoration: none;
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  border-width: medium;
+  border-bottom-style:solid ;
+  letter-spacing: .5em;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  flex-direction: row;
+  padding: 0 0 2em 0;
+}
+
+.animalCard{
+  display: flex;
+  background-color: #93748a;
+  flex-direction: column;
+  margin: .5em;
+  min-width: 15em;
+  max-width: 15em;
+  border-radius: 5%;
+  padding: .5em 1em;
+  flex-wrap: row wrap;
+}
+
+.animalHeader{
+  text-transform: uppercase;
+  max-height: .5em;
+}
+
+.animalP{
+  max-height: 1em;
+}
+
+.animalList{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+ button{
+   border-radius: 15%;
+   min-width: 6em;
+   border: none;
+   font-weight: bold;
+   margin: 0 1em 0 0;
+ }
+
+ button:hover{
+   cursor: pointer;
+ }
