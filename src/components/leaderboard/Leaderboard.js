@@ -49,11 +49,14 @@ export const Leaderboard = () => {
         return newUserArr
     }
 
+    // ARRAY TO POST PLACEMENT BESIDE EACH TOP FIVE OBJECT
+    const placeArr = ["FIRST", "SECOND", "THIRD", "FOURTH", "FIFTH"]
+
     // SORTS AN ARRAY OF OBJECTS BASED ON THEIR TOTAL XP NUMBER
     const sortedArr = userArrWithXp().sort((a, b) => { return b.totalXp - a.totalXp })
 
     // CREATES AN ARRAY OF TOP FIVE XP USERS BY SLICING THE SORTED ARRAY
-    const topFive = sortedArr.slice([0],[5])
+    const topFive = sortedArr.slice([0], [5])
 
     // WHEN THE PAGE LOADS GETANIMALS IS CALLED 
     useEffect(() => {
@@ -67,14 +70,25 @@ export const Leaderboard = () => {
 
     return (
         <>
-            <h1>Let's see who is gaining all the XP!</h1>
-            {topFive.map(user =>
-                <LeaderboardCard
-                    key={user.id}
-                    singleUser={user}
-                />
-            )}
-
+            <h1 className="leaderHeader">Top Five EnCounter Players:</h1>
+            <section className="leaderCardPage">
+                <section className="placingTiles">
+                    {placeArr.map(place =>
+                        <p className="placement" key={place}>{place}</p>
+                    )}
+                </section>
+                <div className="leaderCardContainer">
+                    {topFive.map(user =>
+                        <LeaderboardCard
+                            key={user.id}
+                            singleUser={user}
+                        />
+                    )}
+                </div>
+                <aside className="goatDab">
+                    <img className="goat" src={"/images/goatDabbing.png"} alt="GOAT Dabbing" />
+                </aside>
+            </section>
         </>
     )
 }

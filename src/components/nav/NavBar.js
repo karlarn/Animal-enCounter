@@ -12,9 +12,9 @@ export const NavBar = () => {
         <>
 
             <nav>
-            <picture>
-                <img className="pandaLogo" src={"/images/pandaLogo.png"} alt="Panda Waving Logo" />
-            </picture>
+                <picture>
+                    <img className="pandaLogo" src={"/images/pandaLogo.png"} alt="Panda Waving Logo" />
+                </picture>
                 <ul>
                     <li>
                         <Link className="nav-link" to="/home">Profile</Link>

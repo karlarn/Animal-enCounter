@@ -59,23 +59,31 @@ export const ProfileCard = () => {
 
     return (
         <>
-            <h1>Checkout {user.firstName}'s Profile!</h1>
-            <h2>They are on a roll with {xpCounter()} total XP!</h2>
-            <h1>All of {user.firstName}'s Friends:</h1>
-            {userFriends.map(friend => {
-                return <ProfileFriendList
-                    key={friend.id}
-                    singleFriend={friend}
-                />;
-            })
+            <section className="profileHeader">
+                <h1>Welcome to {user.firstName}'s Profile!</h1>
+                <h2>They are on a roll with {xpCounter()} total XP!</h2>
+                <h1>{user.firstName}'s Friends:</h1>
+            </section>
+            <section className="friendContainer">
+                {userFriends.map(friend => {
+                    return <ProfileFriendList
+                        key={friend.id}
+                        singleFriend={friend}
+                    />;
+                })
 
-            }
-            <h1>All of {user.firstName}'s Animals:</h1>
-            {userAnimals.map(animal => {
-                return <AnimalList
-                    key={animal.id}
-                    singleAnimal={animal} />
-            })}
+                }
+            </section>
+            <section className="profileHeader">
+                <h1>{user.firstName}'s Animals:</h1>
+            </section>
+            <div className="animalList">
+                {userAnimals.map(animal => {
+                    return <AnimalList
+                        key={animal.id}
+                        singleAnimal={animal} />
+                })}
+            </div>
 
         </>
     )

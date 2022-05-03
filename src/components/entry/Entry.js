@@ -40,32 +40,40 @@ export const AnimalEntryCard = () => {
 
     // ANIMAL ENTRY FORM
     return (
-        <form className="animalEntryForm">
-            <h1>Add an animal to your profile:</h1>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="name">What Kind of animal did you see?</label>
-                    <input type="text" id="name" onChange={handleControlledInputChange} required placeholder="Animal name" value={animal.name} />
-                </div>
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="where">Where did you see the animal?</label>
-                    <input type="text" id="where" onChange={handleControlledInputChange} required placeholder="Location description" value={animal.where} />
-                </div>
-            </fieldset>
-            <fieldset>
-                <div className="form-group">
-                    <label htmlFor="behavior">Was this animal domestic or wild?</label><br />
-                    <input type="radio" onChange={handleControlledInputChange} value="Domestic" name="behavior" id="behavior" /> Domestic <br />
-                    <input type="radio" onChange={handleControlledInputChange} value="Wild" name="behavior" id="behavior" /> Wild
-                </div>
-            </fieldset>
+        <>
 
-            <button type="button" className="btn btn-primary"
-                onClick={handleClickSaveAnimal}>
-                Add Animal
-            </button>
-        </form>
+            <h1 className="animalEntryHeader">Add an animal to your profile:</h1>
+            <form className="animalEntryPage">
+                <div className="animalEntryForm">
+                    <fieldset>
+                        <div className="form-group">
+                            <label htmlFor="name">What Kind of animal did you see?</label><br />
+                            <input type="text" id="name" onChange={handleControlledInputChange} required placeholder="Animal name" value={animal.name} />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div className="form-group">
+                            <label htmlFor="where">Where did you see the animal?</label><br />
+                            <input type="text" id="where" onChange={handleControlledInputChange} required placeholder="Location description" value={animal.where} />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div className="form-group">
+                            <label htmlFor="behavior">Was this animal domestic or wild?</label><br />
+                            <input type="radio" onChange={handleControlledInputChange} value="Domestic" name="behavior" id="behavior" /> Domestic <br />
+                            <input type="radio" onChange={handleControlledInputChange} value="Wild" name="behavior" id="behavior" /> Wild
+                        </div>
+                    </fieldset>
+
+                    <button type="button" className="btn btn-primary"
+                        onClick={handleClickSaveAnimal}>
+                        Add Animal
+                    </button>
+                </div>
+                <aside className="antContainer">
+                    <img className="ant" src={"/images/searchAnt.png"} alt="Ant looking through binoculars" />
+                </aside>
+            </form>
+        </>
     )
 }
