@@ -98,34 +98,42 @@ export const FriendComponent = () => {
 
     return (
         <>
-            <h1>Want to look for more friends to add?</h1>
-            <section className="searchInput">
-                <input id="searchInput" type="text" placeholder="Search for a User"
-                    onChange={(e) => searchItems(e.target.value)} ></input>
-            </section>
-            {/* TERNARY STATEMENT IF SEARCH INPUT IS GREATER THAN 1 RENDER THE FRIENDSEARCHRESULT USING FILTEREDUSERARR ELSE RENDER IT WITH USERS ARRAY */}
-            <section>{searchInput.length > 1 ?
-                filteredUserArr.map((singleResult) => {
-                    return (<FriendSearchResult
-                        key={singleResult.id}
-                        singleResult={singleResult}
-                        handleAddFriend={handleAddFriend}
-                    />)
-                }
-                ) : ""}
+            <div className="friendForm">
+                <section className="friendSearch">
+                    <h1>Search for Friends to add:</h1>
+                    <section className="searchInput">
+                        <input id="searchInput" type="text" placeholder="Search for a User"
+                            onChange={(e) => searchItems(e.target.value)} ></input>
+                    </section>
+                    {/* TERNARY STATEMENT IF SEARCH INPUT IS GREATER THAN 1 RENDER THE FRIENDSEARCHRESULT USING FILTEREDUSERARR ELSE RENDER IT WITH USERS ARRAY */}
+                    <section className="friendSearchContainer">{searchInput.length > 1 ?
+                        filteredUserArr.map((singleResult) => {
+                            return (<FriendSearchResult
+                                key={singleResult.id}
+                                singleResult={singleResult}
+                                handleAddFriend={handleAddFriend}
+                            />)
+                        }
+                        ) : ""}
 
-            </section>
-            <h1>Take a look at all the friends you've accumulated!</h1>
-            {/* RENDERS THE FRIENDCARD BASED OFF THE FRIENDS USESTATE */}
-            <div className="container-cards">
-                {friends.map(friend => {
-                    return <FriendCard
-                        key={friend.id}
-                        singleFriendUser={friend}
-                        handleDeleteFriend={handleDeleteFriend} />;
-                })
+                    </section>
+                </section>
+                <section className="FriendList">
+                    <h1>Your Friend List:</h1>
+                    {/* RENDERS THE FRIENDCARD BASED OFF THE FRIENDS USESTATE */}
+                    <section>
+                        <section className="friendContainer">
+                            {friends.map(friend => {
+                                return <FriendCard
+                                    key={friend.id}
+                                    singleFriendUser={friend}
+                                    handleDeleteFriend={handleDeleteFriend} />;
+                            })
 
-                }
+                            }
+                        </section>
+                    </section>
+                </section>
             </div>
         </>
     )

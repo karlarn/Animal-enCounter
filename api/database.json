@@ -880,6 +880,96 @@
       "xp": 3,
       "userId": 10,
       "id": 91
+    },
+    {
+      "name": "Cat",
+      "where": "In the house ",
+      "behavior": "Domestic",
+      "date": "2022-05-03T14:13:33.773Z",
+      "xp": 10,
+      "userId": 1,
+      "id": 92
+    },
+    {
+      "name": "Sea Star",
+      "where": "The ocean",
+      "behavior": "Wild",
+      "date": "2022-05-03T14:15:26.102Z",
+      "xp": 10,
+      "userId": 2,
+      "id": 93
+    },
+    {
+      "name": "Piglett",
+      "where": "Backyard",
+      "behavior": "Domestic",
+      "date": "2022-05-03T14:16:12.436Z",
+      "xp": 6,
+      "userId": 3,
+      "id": 94
+    },
+    {
+      "name": "Elephant",
+      "where": "The zoo",
+      "behavior": "Wild",
+      "date": "2022-05-03T14:16:55.988Z",
+      "xp": 2,
+      "userId": 4,
+      "id": 95
+    },
+    {
+      "name": "Deer",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-05-03T14:17:49.175Z",
+      "xp": 3,
+      "userId": 5,
+      "id": 96
+    },
+    {
+      "name": "Otter",
+      "where": "Aquarium",
+      "behavior": "Wild",
+      "date": "2022-05-03T14:19:20.536Z",
+      "xp": 6,
+      "userId": 6,
+      "id": 97
+    },
+    {
+      "name": "Blue bird",
+      "where": "In  the woods",
+      "behavior": "Wild",
+      "date": "2022-05-03T14:20:06.583Z",
+      "xp": 2,
+      "userId": 7,
+      "id": 98
+    },
+    {
+      "name": "Gremlin",
+      "where": "Steven's house",
+      "behavior": "Domestic",
+      "date": "2022-05-03T14:20:40.149Z",
+      "xp": 8,
+      "userId": 8,
+      "id": 99
+    },
+    {
+      "name": "Walrus",
+      "where": "A channel",
+      "behavior": "Wild",
+      "date": "2022-05-03T14:21:30.271Z",
+      "xp": 3,
+      "userId": 9,
+      "id": 100
+    },
+    {
+      "name": "Toad",
+      "where": "Super Mario",
+      "behavior": "Wild",
+      "date": "2022-05-03T14:22:05.921Z",
+      "xp": 1,
+      "userId": 10,
+      "id": 101
     }
   ],
   "friends": [
@@ -994,19 +1084,24 @@
       "id": 43
     },
     {
-      "userId": 8,
+      "userId": 10,
+      "currentUserId": 3,
+      "id": 46
+    },
+    {
+      "userId": 1,
       "currentUserId": 10,
-      "id": 44
+      "id": 47
+    },
+    {
+      "userId": 6,
+      "currentUserId": 10,
+      "id": 49
     },
     {
       "userId": 4,
       "currentUserId": 10,
-      "id": 45
-    },
-    {
-      "userId": 10,
-      "currentUserId": 3,
-      "id": 46
+      "id": 50
     }
   ]
 }
