@@ -83,7 +83,7 @@ li {
   
 }
  button{
-   border-radius: 15%;
+   border-radius: 5%;
    min-width: 6em;
    border: none;
    font-weight: bold;
@@ -159,3 +159,76 @@ li {
  .goat{
    margin-top: 3em;
  }
+
+   .footer .button{
+      width:35px;
+      height:35px;
+      border: #aecfdf 12px solid;
+      border-radius:35px;
+      margin:0 auto;
+      position:relative;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+  }
+  .footer .button:hover{
+      width:35px;
+      height:35px;
+      border: #aecfdf 12px solid;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      position:relative;
+  }
+  .footer {
+      bottom:0;
+      left:0;
+      position:fixed;
+      width: 100%;
+      height: 2em;
+      overflow:hidden;
+      margin:0 auto;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      z-index:999;
+  }
+  .footer:hover {
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      transition: all 1s ease;
+      height: 8em;
+  }
+  .footer .container{
+      display: flex;
+      margin-top:5px;
+      width:100%;
+  height:100%;
+    position:relative;
+    top:0;
+    left:0;
+    color: black;
+    background-color: #aecfdf;
+  }
+  .footer .cont{
+    position:relative;
+      height:auto;
+      margin:0 auto;
+  }
+  .footer_center{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width:500px;
+      float:left;
+    text-align:center;
+  }
+

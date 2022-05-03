@@ -27,7 +27,7 @@ export const HomeCard = () => {
     return (
         <>
             <div className="profileHeader"><h1>Hey {JSON.parse(sessionStorage.getItem("encounter_user")).firstName}!</h1>
-                <h2>You've enCountered so many animals and received {xpCounter()} XP so far!</h2></div>
+                <h2>You've EnCountered so many animals and received {xpCounter()} XP so far!</h2></div>
             <div className="animalList">
                 {animals.map((animal) => (<AnimalCard
                     key={animal.id}
