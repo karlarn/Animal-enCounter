@@ -34,6 +34,13 @@ To deploy Animal EnCounter run
 ```bash
   npm start
 ```
+To host the API 
+
+```bash
+  cd animal-enCounter/
+  cd api/
+  json-server -p 8088 -w database.json
+```
     
 ## Color Reference
 
