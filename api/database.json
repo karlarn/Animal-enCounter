@@ -970,6 +970,96 @@
       "xp": 1,
       "userId": 10,
       "id": 101
+    },
+    {
+      "name": "Goat",
+      "where": "A farm",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:23:04.554Z",
+      "xp": 1,
+      "userId": 1,
+      "id": 102
+    },
+    {
+      "name": "Manatee ",
+      "where": "In the shallows",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:23:45.853Z",
+      "xp": 9,
+      "userId": 2,
+      "id": 103
+    },
+    {
+      "name": "Fly",
+      "where": "In the house ",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:24:41.107Z",
+      "xp": 9,
+      "userId": 4,
+      "id": 104
+    },
+    {
+      "name": "Ant",
+      "where": "In a hill",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:25:26.975Z",
+      "xp": 2,
+      "userId": 5,
+      "id": 105
+    },
+    {
+      "name": "Oinker",
+      "where": "Backyard",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:26:10.295Z",
+      "xp": 8,
+      "userId": 3,
+      "id": 106
+    },
+    {
+      "name": "Camel",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:27:15.207Z",
+      "xp": 10,
+      "userId": 6,
+      "id": 107
+    },
+    {
+      "name": "Cardinal",
+      "where": "At the birdfeeder",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:28:21.568Z",
+      "xp": 7,
+      "userId": 7,
+      "id": 108
+    },
+    {
+      "name": "Squirrel",
+      "where": "In a tree",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:29:03.087Z",
+      "xp": 2,
+      "userId": 8,
+      "id": 109
+    },
+    {
+      "name": "Crocodile",
+      "where": "In a swamp",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:29:35.004Z",
+      "xp": 7,
+      "userId": 9,
+      "id": 110
+    },
+    {
+      "name": "Rat",
+      "where": "Subway",
+      "behavior": "Wild",
+      "date": "2022-05-04T14:30:38.180Z",
+      "xp": 8,
+      "userId": 10,
+      "id": 111
     }
   ],
   "friends": [

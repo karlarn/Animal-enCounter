@@ -61,6 +61,7 @@ li {
   border-radius: 5%;
   padding: .5em 1em;
   flex-wrap: row wrap;
+  border: black 1px solid;
 }
 
 .profileHeader, .animalEntryForm, .friendForm, .leaderCardPage{
@@ -122,6 +123,7 @@ li {
    border-radius: 5%;
    padding: .2em 1em 1em 1em;
    min-width: 13em;
+   border: black 1px solid;
  }
 
  .searchInput{
@@ -135,6 +137,7 @@ li {
   max-width: 10em;
   margin: 1em 0;
   margin-left: 2em;
+  border: black 1px solid;
  }
 
  .leaderCardPage{
@@ -142,9 +145,7 @@ li {
  }
 
  .placement{
-  border-radius: 5%;
   padding: 2.8em 2.5em;
-  max-width: 10em;
   margin: 1em -1em 1em -1.5em;
   font-weight: bolder;
   color:black;
