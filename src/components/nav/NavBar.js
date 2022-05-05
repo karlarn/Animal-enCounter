@@ -33,7 +33,6 @@ export const NavBar = () => {
                     </li>
                 </ul>
             </nav>
-
         </>
     )
 }

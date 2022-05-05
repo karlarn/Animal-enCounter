@@ -33,7 +33,6 @@ export const HomeCard = () => {
                     key={animal.id}
                     singleAnimal={animal} />))}
             </div>
-
         </>
     )
 }

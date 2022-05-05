@@ -30,7 +30,6 @@ export const updateAnimal = (singleAnimal) => {
         },
         body: JSON.stringify(singleAnimal)
     }).then(data => data.json());
-
 }
 
 // FETCHES ALL ANIMALS IN THE DB

@@ -10,7 +10,6 @@ export const AnimalCard = ({ singleAnimal }) => {
                 <p className="animalP">Date: {singleAnimal.date.slice([0], [10])}</p>
                 <p className="animalP">EnCounter location: {singleAnimal.where}</p>
                 <p className="animalP">Behavior:{singleAnimal.behavior} </p>
-
                 {/* TAKES YOU TO THE EDIT ANIMAL FORM WITH THE SPECIFIC ANIMAL ID */}
                 <Link className="animalLink" to={`/animal/${singleAnimal.id}/edit`}>
                     <button>Edit</button>

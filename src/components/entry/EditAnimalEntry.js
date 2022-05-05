@@ -23,14 +23,12 @@ export const EditAnimalForm = () => {
     // CREATES AN OBJECT BASED ON THE STATE OF "ANIMAL" AND PATCHES THE OBJECT IN THE DB THEN NAVIGATES TO HOME
     const updateExistingAnimal = evt => {
         evt.preventDefault()
-
         const editedAnimal = {
             id: animalId,
             name: animal.name,
             where: animal.where,
             behavior: animal.behavior
         };
-
         updateAnimal(editedAnimal)
             .then(() => navigate("/home")
             )

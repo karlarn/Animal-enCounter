@@ -41,17 +41,8 @@ To host the API
   cd api/
   json-server -p 8088 -w database.json
 ```
-    
-## Color Reference
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Light Cyan | ![#AECFDF](https://color-hex.org/colors/aecfdf.png) #AECFDF  |
-| Santas Grey | ![#f8f8f8](https://color-hex.org/colors/9f9fad.png) #9F9FAD |
-| Mountbatten Pink | ![#00b48a](https://color-hex.org/colors/93748a.png) #93748A |
-
-
-## Tech Stack
+ ## Tech Stack
 
 - HTML/CSS 
 - JS
@@ -63,3 +54,10 @@ To host the API
 - POSTMAN
 - CANVA
 
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Light Cyan | ![#AECFDF](https://color-hex.org/colors/aecfdf.png) #AECFDF  |
+| Santas Grey | ![#f8f8f8](https://color-hex.org/colors/9f9fad.png) #9F9FAD |
+| Mountbatten Pink | ![#00b48a](https://color-hex.org/colors/93748a.png) #93748A |
