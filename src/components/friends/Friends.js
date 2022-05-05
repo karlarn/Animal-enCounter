@@ -40,16 +40,11 @@ export const FriendComponent = () => {
         friends.forEach((i) => {
             friendIdArr.push(i.userId)
         })
-
         friendIdArr.push(JSON.parse(sessionStorage.getItem("encounter_user")).id)
-
-
         const filter = users.filter((user) => {
-
             return !friendIdArr.includes(user.id)
         })
         return filter
-
     }
 
     // WHEN ONCHANGE OF THE TEXT INPUT FOR "SEARCH FOR A USER" HAPPENS THIS TAKES IN THE VALUE AND SETS IT TO THE SEARCHINPUT USESTATE 
@@ -73,8 +68,7 @@ export const FriendComponent = () => {
         deleteFriend(id)
             .then(() =>
                 getFriends()
-            )
-    }
+            )}
 
     // ADDS A FRIEND OBJECT TO THE DB BASED ON BOTH USER IDS THEN CALLS GETFRIENDS, SETS THE SEARCHINPUT STATE TO AN EMPTY STRING AS WELL AS THE TEXT BOX'S INPUT VALUE
     const handleAddFriend = (friendId) => {
@@ -87,7 +81,6 @@ export const FriendComponent = () => {
             setSearchInput('')
             document.getElementById("searchInput").value = ""
         })
-
     }
 
     // WHEN THE PAGE INITIALLY LOADS THIS CALLS THE GETUSERS AND GETFRIENDS FUNCTION
@@ -115,7 +108,6 @@ export const FriendComponent = () => {
                             />)
                         }
                         ) : ""}
-
                     </section>
                 </section>
                 <section className="FriendList">
@@ -129,7 +121,6 @@ export const FriendComponent = () => {
                                     singleFriendUser={friend}
                                     handleDeleteFriend={handleDeleteFriend} />;
                             })
-
                             }
                         </section>
                     </section>
@@ -137,5 +128,4 @@ export const FriendComponent = () => {
             </div>
         </>
     )
-
 }

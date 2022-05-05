@@ -32,15 +32,9 @@ export const ApplicationView = ({ setAuthUser, isAuthenticated }) => {
           <Route path="profile/:userId" element={<ProfileCard />} />
 
         </Route>
-
-
-
         <Route path="/login" element={<Login setAuthUser={setAuthUser} />} />
         <Route path="/register" element={<Register setAuthUser={setAuthUser} />} />
-
-
       </Routes>
     </>
-
   )
 }

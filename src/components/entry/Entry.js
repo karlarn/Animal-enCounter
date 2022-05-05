@@ -18,24 +18,19 @@ export const AnimalEntryCard = () => {
 
     // WHEN 'CHANGE' HAPPENS IN THE FORM THE VALUE IS CHANGED IN THE OBJECT USESTATE
     const handleControlledInputChange = (event) => {
-
         const newAnimal = { ...animal }
         let selectedVal = event.target.value
-
         newAnimal[event.target.id] = selectedVal
-
         setAnimal(newAnimal)
     }
     // WHEN THE ADD ANIMAL BUTTON IS CLICKED THE ANIMAL OBJECT IN THE USESTATE IS SAVED WITH A FETCH CALL TO THE ANIMALS ARRAY IN THE API. THE USER RECIEVES AN ALERT AND ONCE THEY CLICK "OK" THEY NAVIGATE TO THE HOME PAGE. 
     const handleClickSaveAnimal = (event) => {
         event.preventDefault()
-
         addAnimal(animal)
             .then(() => {
                 alert(`You added ${animal.name} to your enCounter list and gained ${animal.xp} XP!`)
             })
             .then(() => { navigate("/home") })
-
     }
 
     // ANIMAL ENTRY FORM
@@ -64,7 +59,6 @@ export const AnimalEntryCard = () => {
                             <input type="radio" onChange={handleControlledInputChange} value="Wild" name="behavior" id="behavior" /> Wild
                         </div>
                     </fieldset>
-
                     <button type="button" className="btn btn-primary"
                         onClick={handleClickSaveAnimal}>
                         Add Animal

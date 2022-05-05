@@ -71,7 +71,6 @@ export const ProfileCard = () => {
                         singleFriend={friend}
                     />;
                 })
-
                 }
             </section>
             <section className="profileHeader">
@@ -84,7 +83,6 @@ export const ProfileCard = () => {
                         singleAnimal={animal} />
                 })}
             </div>
-
         </>
     )
 }

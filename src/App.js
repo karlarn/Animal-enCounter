@@ -15,7 +15,7 @@ function App() {
     <>
       <NavBar isAuthenticated={isAuthenticated} />
       <ApplicationView setAuthUser={setAuthUser} isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
-      <FooterCard isAuthenticated={isAuthenticated} />
+      <FooterCard />
     </>
   );
 }

@@ -8,12 +8,10 @@ export const FriendSearchResult = ({ singleResult, handleAddFriend }) => {
         <p>{singleResult.email}</p>
         <button
           type="button"
-          onClick={() => handleAddFriend(singleResult.id)}
-        >
+          onClick={() => handleAddFriend(singleResult.id)} >
           Add Friend
         </button>
       </div>
     </>
   )
-
 }

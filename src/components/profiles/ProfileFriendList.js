@@ -15,7 +15,6 @@ export const ProfileFriendList = ({ singleFriend }) => {
                     </Link> : <Link to={`/profile/${singleFriend.user.id}`}>
                         <button>View Profile</button>
                     </Link>}
-
                 </div>
             </div>
         </>
