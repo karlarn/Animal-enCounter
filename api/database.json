@@ -481,7 +481,7 @@
       "where": "In the ground",
       "behavior": "Wild",
       "date": "2022-04-29T15:40:00.391Z",
-      "xp": 2,
+      "xp": 5,
       "userId": 4,
       "id": 47
     },
@@ -913,7 +913,7 @@
       "where": "The zoo",
       "behavior": "Wild",
       "date": "2022-05-03T14:16:55.988Z",
-      "xp": 2,
+      "xp": 5,
       "userId": 4,
       "id": 95
     },
@@ -1150,6 +1150,276 @@
       "xp": 9,
       "userId": 10,
       "id": 121
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:43:45.308Z",
+      "xp": 9,
+      "userId": 1,
+      "id": 122
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:45:54.378Z",
+      "xp": 7,
+      "userId": 2,
+      "id": 123
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:46:27.100Z",
+      "xp": 7,
+      "userId": 4,
+      "id": 124
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:46:59.073Z",
+      "xp": 10,
+      "userId": 3,
+      "id": 125
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:47:26.930Z",
+      "xp": 5,
+      "userId": 6,
+      "id": 126
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:47:48.671Z",
+      "xp": 8,
+      "userId": 10,
+      "id": 127
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:48:23.146Z",
+      "xp": 4,
+      "userId": 8,
+      "id": 128
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:48:47.118Z",
+      "xp": 6,
+      "userId": 9,
+      "id": 129
+    },
+    {
+      "name": "Ant",
+      "where": "Hill",
+      "behavior": "Wild",
+      "date": "2022-05-11T14:49:05.973Z",
+      "xp": 7,
+      "userId": 5,
+      "id": 130
+    },
+    {
+      "name": "Emu",
+      "where": "Zoo",
+      "behavior": "Domestic",
+      "date": "2022-05-13T14:24:45.914Z",
+      "xp": 5,
+      "userId": 1,
+      "id": 131
+    },
+    {
+      "name": "Ostrich",
+      "where": "Zoo",
+      "behavior": "Domestic",
+      "date": "2022-05-13T14:25:18.546Z",
+      "xp": 10,
+      "userId": 2,
+      "id": 132
+    },
+    {
+      "name": "Dodo",
+      "where": "Farm",
+      "behavior": "Wild",
+      "date": "2022-05-13T14:25:46.116Z",
+      "xp": 7,
+      "userId": 4,
+      "id": 133
+    },
+    {
+      "name": "Penguin",
+      "where": "Aquarium",
+      "behavior": "Wild",
+      "date": "2022-05-13T14:26:32.809Z",
+      "xp": 7,
+      "userId": 5,
+      "id": 134
+    },
+    {
+      "name": "Kiwi",
+      "where": "Australia",
+      "behavior": "Domestic",
+      "date": "2022-05-13T14:27:02.035Z",
+      "xp": 7,
+      "userId": 3,
+      "id": 135
+    },
+    {
+      "name": "Turkey",
+      "where": "The yard",
+      "behavior": "Wild",
+      "date": "2022-05-13T14:28:05.183Z",
+      "xp": 4,
+      "userId": 10,
+      "id": 136
+    },
+    {
+      "name": "Cassowary",
+      "where": "Yapen Island",
+      "behavior": "Wild",
+      "date": "2022-05-13T14:28:30.157Z",
+      "xp": 9,
+      "userId": 9,
+      "id": 137
+    },
+    {
+      "name": "Kakapo",
+      "where": "Outback",
+      "behavior": "Wild",
+      "date": "2022-05-13T14:29:20.019Z",
+      "xp": 5,
+      "userId": 8,
+      "id": 138
+    },
+    {
+      "name": "Weka",
+      "where": "Guinea",
+      "behavior": "Wild",
+      "date": "2022-05-13T14:29:47.831Z",
+      "xp": 9,
+      "userId": 7,
+      "id": 139
+    },
+    {
+      "name": "Takahe",
+      "where": "Some island",
+      "behavior": "Wild",
+      "date": "2022-05-13T14:30:47.642Z",
+      "xp": 2,
+      "userId": 6,
+      "id": 140
+    },
+    {
+      "name": "Anole",
+      "where": "On a rock",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:25:26.038Z",
+      "xp": 2,
+      "userId": 1,
+      "id": 141
+    },
+    {
+      "name": "Skink",
+      "where": "Outside",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:27:17.960Z",
+      "xp": 7,
+      "userId": 2,
+      "id": 142
+    },
+    {
+      "name": "Komodo Dragon",
+      "where": "South Africa",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:28:02.793Z",
+      "xp": 1,
+      "userId": 3,
+      "id": 143
+    },
+    {
+      "name": "Gila Monster",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:28:43.279Z",
+      "xp": 5,
+      "userId": 5,
+      "id": 144
+    },
+    {
+      "name": "Iguana",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:31:05.771Z",
+      "xp": 3,
+      "userId": 4,
+      "id": 145
+    },
+    {
+      "name": "Gecko",
+      "where": "Friend's house",
+      "behavior": "Domestic",
+      "date": "2022-05-16T14:34:49.510Z",
+      "xp": 10,
+      "userId": 6,
+      "id": 146
+    },
+    {
+      "name": "Slender Glass Lizard",
+      "where": "Zoo",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:35:49.917Z",
+      "xp": 6,
+      "userId": 9,
+      "id": 147
+    },
+    {
+      "name": "Water Monitor",
+      "where": "Outside",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:36:25.823Z",
+      "xp": 6,
+      "userId": 10,
+      "id": 148
+    },
+    {
+      "name": "Basilisk",
+      "where": "Outside",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:37:35.434Z",
+      "xp": 8,
+      "userId": 8,
+      "id": 149
+    },
+    {
+      "name": "Tegu",
+      "where": "On a rock",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:42:42.811Z",
+      "xp": 5,
+      "userId": 7,
+      "id": 150
+    },
+    {
+      "name": "Grasshopper",
+      "where": "The yard ",
+      "behavior": "Wild",
+      "date": "2022-05-16T14:50:33.074Z",
+      "xp": 3,
+      "userId": 7,
+      "id": 151
     }
   ],
   "friends": [
@@ -1157,11 +1427,6 @@
       "userId": 2,
       "currentUserId": 5,
       "id": 1
-    },
-    {
-      "userId": 6,
-      "currentUserId": 5,
-      "id": 3
     },
     {
       "userId": 2,
@@ -1287,6 +1552,16 @@
       "userId": 3,
       "currentUserId": 10,
       "id": 52
+    },
+    {
+      "userId": 4,
+      "currentUserId": 1,
+      "id": 53
+    },
+    {
+      "userId": 6,
+      "currentUserId": 5,
+      "id": 54
     }
   ]
 }
