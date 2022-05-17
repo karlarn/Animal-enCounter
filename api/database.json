@@ -1420,6 +1420,15 @@
       "xp": 3,
       "userId": 7,
       "id": 151
+    },
+    {
+      "name": "Owl",
+      "where": "Woods",
+      "behavior": "Wild",
+      "date": "2022-05-17T15:46:50.863Z",
+      "xp": 5,
+      "userId": 1,
+      "id": 152
     }
   ],
   "friends": [
@@ -1459,19 +1468,9 @@
       "id": 19
     },
     {
-      "userId": 2,
-      "currentUserId": 1,
-      "id": 30
-    },
-    {
       "userId": 3,
       "currentUserId": 1,
       "id": 31
-    },
-    {
-      "userId": 6,
-      "currentUserId": 1,
-      "id": 33
     },
     {
       "userId": 10,
@@ -1562,6 +1561,21 @@
       "userId": 6,
       "currentUserId": 5,
       "id": 54
+    },
+    {
+      "userId": 10,
+      "currentUserId": 1,
+      "id": 55
+    },
+    {
+      "userId": 8,
+      "currentUserId": 1,
+      "id": 56
+    },
+    {
+      "userId": 6,
+      "currentUserId": 1,
+      "id": 57
     }
   ]
 }
