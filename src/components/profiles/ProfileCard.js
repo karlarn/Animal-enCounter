@@ -77,10 +77,10 @@ export const ProfileCard = () => {
                 <h1>{user.firstName}'s Animals:</h1>
             </section>
             <div className="animalList">
-                {userAnimals.map(animal => {
+                {userAnimals.map(singleAnimal => {
                     return <AnimalList
-                        key={animal.id}
-                        singleAnimal={animal} />
+                        key={singleAnimal.id}
+                        singleAnimal={singleAnimal} />
                 })}
             </div>
         </>

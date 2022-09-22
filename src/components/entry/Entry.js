@@ -31,7 +31,7 @@ export const AnimalEntryCard = () => {
                 alert(`You added ${animal.name} to your enCounter list and gained ${animal.xp} XP!`)
             })
             .then(() => { navigate("/home") })
-    }
+    }   
 
     // ANIMAL ENTRY FORM
     return (
