@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 // FRIEND LIST FOR PROFILECARDJS
+// Should prolly change the time in this project too. meh. 
 export const ProfileFriendList = ({ singleFriend }) => {
 
     return (
