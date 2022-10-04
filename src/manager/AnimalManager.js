@@ -6,7 +6,7 @@ export const addAnimal = (newAnimal) => {
             "Content-Type": "application/json"
         },
         body: JSON.stringify(newAnimal)
-    }).then(response => response.json())
+    }).then(res => res.json())
 }
 
 // RETURNS ALL ANIMALS FROM DB RELATING TO A SINGLE USER ID AND SORTS IT BY DATE
