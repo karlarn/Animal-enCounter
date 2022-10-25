@@ -4,6 +4,12 @@ export const getAnimalByUserId = (currentUserId) => {
         .then(res => res.json())
 }
 
+// RETURNS ONE SPECIFIC ANIMAL FROM DB
+export const getAnimalById = (animalId) => {
+    return fetch(`http://localhost:8088/animals/${animalId}`)
+        .then(res => res.json())
+}
+
 // RETURNS ALL ANIMALS IN THE DB
 export const addAnimal = (newAnimal) => {
     return fetch('http://localhost:8088/animals', {
@@ -13,12 +19,6 @@ export const addAnimal = (newAnimal) => {
         },
         body: JSON.stringify(newAnimal)
     }).then(res => res.json())
-}
-
-// RETURNS ONE SPECIFIC ANIMAL FROM DB
-export const getAnimalById = (animalId) => {
-    return fetch(`http://localhost:8088/animals/${animalId}`)
-        .then(res => res.json())
 }
 
 //   UPDATES PORTIONS OF A SPECIFIC ANIMAL IN THE DB
