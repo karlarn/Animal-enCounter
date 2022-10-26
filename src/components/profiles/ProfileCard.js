@@ -41,7 +41,7 @@ export const ProfileCard = () => {
     }
 
     // LOOPS THE USERANIMALS STATE AND ADDS ALL THE XP TO A SINGLE VARIABLE  
-    const xpCounter = () => {
+    const xpCounter = (i) => {
         let accumulatedXp = 0
         userAnimals.forEach((animalObj) => {
             accumulatedXp = accumulatedXp + animalObj.xp
