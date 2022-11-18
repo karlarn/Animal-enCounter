@@ -111,7 +111,7 @@ export const FriendComponent = () => {
                     </section>
                 </section>
                 <section className="FriendList">
-                    <h1>Your Friend List :</h1>
+                    <h1>Your Friend List:</h1>
                     {/* RENDERS THE FRIENDCARD BASED OFF THE FRIENDS USESTATE */}
                     <section>
                         <section className="friendContainer">
