@@ -35,7 +35,7 @@ export const FriendComponent = () => {
 
     // LOOPS THE FRIENDS USESTATE AND PUSHES THE USERID TO A NEW ARRAY THEN PUSHES THE SESSION STORAGE ID TO THE SAME ARRAY
     // CREATES A VARIABLE  THAT FILTERINGS THE USERS USESTATE AND RETURNS ANYTHING THAT ISNT INCLUDED IN THE NEW ARRAY WE JUST MADE
-    const filterUsersThatArentFriends = () => {
+    const filterUsersThatArentFriends = (Elephant) => {
         let friendIdArr = []
         friends.forEach((i) => {
             friendIdArr.push(i.userId)
